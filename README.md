@@ -16,16 +16,16 @@ $x['data'] = $this->m_crud->get('Nama_Table')->result();
 # Untuk Update Data
 
 $data = array(
-  'fied_database1' => $_POST['nama_field1'],
-  'fied_database2' => $_POST['nama_field2']
+  'field_database1' => $_POST['nama_field1'],
+  'field_database2' => $_POST['nama_field2']
 );
 
 $this->m_crud->update('primary_key','idnya',$data,'Nama_Table');
 
 # Untuk Insert Data
 $data = array(
-  'fied_database1' => $_POST['nama_field1'],
-  'fied_database2' => $_POST['nama_field2']
+  'field_database1' => $_POST['nama_field1'],
+  'field_database2' => $_POST['nama_field2']
 );
 
 $this->m_crud->insert($data,'Nama_Table');
